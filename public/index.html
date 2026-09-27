@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bed Status &mdash; St. Aldric General</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <h1>St. Aldric General</h1>
+      <span class="subtitle">Inpatient &amp; Bed Status</span>
+    </div>
+    <div class="topbar-right">
+      <span id="clock" class="clock"></span>
+      <span id="conn-dot" class="conn-dot" title="Connection status"></span>
+    </div>
+  </header>
+
+  <section class="summary-strip" id="summary-strip">
+    <!-- filled by dashboard.js -->
+  </section>
+
+  <main class="ward-grid" id="ward-grid">
+    <!-- ward cards filled by dashboard.js -->
+  </main>
+
+  <div class="modal-backdrop" id="modal-backdrop">
+    <div class="modal" id="modal-content"></div>
+  </div>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
